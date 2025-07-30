@@ -82,7 +82,7 @@ const HeroSection = () => {
         transition-all duration-1000 ease-out
         ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
       `}
-      style={{ backgroundImage: 'linear-gradient(0deg, rgba(58, 58, 58, 0.42) 0%, rgba(58, 58, 58, 0.42) 100%), url(https://placehold.co/1440x1024)' }}
+      style={{ backgroundImage: 'linear-gradient(0deg, rgba(58, 58, 58, 0.42) 0%, rgba(58, 58, 58, 0.42) 100%), url(IMG-20250730-WA0010.jpg)' }}
     >
       <Headers /> {/* Render the Header component */}
 

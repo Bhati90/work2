@@ -144,7 +144,7 @@ const backendApiUrl = 'http://localhost:8000/api/contact/submit/';
         {/* Left Side - Image */}
         <div className="w-full lg:w-1/2 h-64 sm:h-96 lg:h-auto bg-gray-600 relative overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-1">
           <img
-            src="https://placehold.co/897x560/E0F2F1/000000?text=Contact+Us"
+            src="IMG-20250730-WA0011.jpg"
             alt="Contact Us"
             className="w-full h-full object-cover"
             onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/897x560/E0F2F1/000000?text=Image+Not+Found"; }}

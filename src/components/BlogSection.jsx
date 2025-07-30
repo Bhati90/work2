@@ -127,7 +127,7 @@ const BlogSection = () => {
   const blogPosts = [
     {
       id: 1,
-      imageUrl: "https://placehold.co/388x320/87CEEB/000000?text=Farm+Crisis",
+      imageUrl: "IMG-20250730-WA0009.jpg",
       category: "Tips",
       title: "Solving India’s Farm Labour Crisis: What We’re Learning in Nashik",
       views: "10K",
@@ -136,7 +136,7 @@ const BlogSection = () => {
     },
     {
       id: 2,
-      imageUrl: "https://placehold.co/388x320/90EE90/000000?text=AI+in+Agri",
+      imageUrl: "IMG-20250730-WA0013.jpg",
       category: "Insight",
       title: "5 Ways AI is Transforming Rural Labour Markets",
       views: "15K",
@@ -145,7 +145,7 @@ const BlogSection = () => {
     },
     {
       id: 3,
-      imageUrl: "https://placehold.co/388x320/FFB6C1/000000?text=Future+Workforce",
+      imageUrl: "IMG-20250730-WA0006.jpg",
       category: "Insight",
       title: "The Future of Bharat’s Agriculture Workforce",
       views: "20K",

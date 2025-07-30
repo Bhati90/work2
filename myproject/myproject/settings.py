@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+import os
 from pathlib import Path
-
+import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,13 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-%=e04gmk$z%=t2@h9%zm@goye5w)%zluk&cgdh$9!y$qy_el@d'
-
+# SECRET_KEY = 'django-insecure-%=e04gmk$z%=t2@h9%zm@goye5w)%zluk&cgdh$9!y$qy_el@d'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','back.onrender.com']
 
 # Application definition
 
@@ -75,17 +75,23 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',  # Use psycopg2 for PostgreSQL
+#         'NAME': 'myproject',   # Must match the database name you created in pgAdmin
+#         'USER': 'myuser',        # Must match the username you created in pgAdmin
+#         'PASSWORD': 'mypassword', # Must match the password you set for 'myuser'
+#         'HOST': 'localhost',     # PostgreSQL is on your local machine
+#         'PORT': '5432',          # Default PostgreSQL port
+#     }
+# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',  # Use psycopg2 for PostgreSQL
-        'NAME': 'myproject',   # Must match the database name you created in pgAdmin
-        'USER': 'myuser',        # Must match the username you created in pgAdmin
-        'PASSWORD': 'mypassword', # Must match the password you set for 'myuser'
-        'HOST': 'localhost',     # PostgreSQL is on your local machine
-        'PORT': '5432',          # Default PostgreSQL port
-    }
+    'default': dj_database_url.config(
+        default='postgres://myuser:mypassword@localhost:5432/myproject',  # Replace with your local dev database URL
+        conn_max_age=600,
+        conn_health_checks=True,
+    )
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -121,12 +127,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+# The URL to serve static files from
 STATIC_URL = 'static/'
+
+# The directory where collectstatic will gather all static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000", # This must match your React app's URL
+    "https://deft-cupcake-e0ba51.netlify.app/", # This must match your React app's URL
 ]

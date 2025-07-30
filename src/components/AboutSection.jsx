@@ -144,7 +144,7 @@ const AboutSection = () => {
           ${imageVisible ? visibleStateClasses : hiddenStateClasses}
         `}>
           <img
-            src="https://placehold.co/595x847" // Replace with your actual image
+            src="IMG-20250730-WA0005.jpg" // Replace with your actual image
             alt="Farm fields"
             className="w-full h-full object-cover"
           />
