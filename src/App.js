@@ -3,14 +3,14 @@ import React from 'react';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import WhyChooseUsSection from './components/WhyChooseUsSection';
-import WhyChooseSection from './components/WhyChooseSection/WhyChooseUsSection';
+// import WhyChooseSection from './components/WhyChooseSection/WhyChooseUsSection';
 import ServiceSection from './components/ServiceSection';
 import PricingSection from './components/PricingSecction';
 import GallerySection from './components/GallerySection';
 import TestimonialsSection from './components/TestimonialSection';
 import FAQSection from './components/FAQSection';
 import BlogSection from './components/BlogSection';
-import ContactSection from './components/ContentSection';
+import ContactSection from './components/ContectSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,11 +18,10 @@ function App() {
     <div className="App">
       <HeroSection />
       <AboutSection />
-      <WhyChooseUsSection />
+      {/* <WhyChooseUsSection /> */}
       <ServiceSection />
-      <PricingSection />
-      <WhyChooseSection/>
-      <GallerySection />
+      {/* <PricingSection /> */}
+      {/* <GallerySection /> */}
       <TestimonialsSection />
       <FAQSection />
       <BlogSection />

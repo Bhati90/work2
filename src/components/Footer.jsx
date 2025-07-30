@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex flex-col justify-start items-start gap-6 sm:gap-10 max-w-full lg:max-w-xs text-center lg:text-left">
         <div className="text-3xl sm:text-4xl font-semibold leading-tight">AgroIntel</div>
         <p className="text-sm sm:text-base font-medium leading-6">
-          Connecting farmers with skilled labour for pruning, harvesting & beyond — powered by AI.
+          Building Bharat's Workforce.
         </p>
       </div>
 
@@ -15,10 +15,11 @@ const Footer = () => {
       <div className="flex flex-col justify-start items-start gap-6 sm:gap-10 text-center sm:text-left">
         <h3 className="text-xl sm:text-2xl font-semibold leading-6">Quick Links</h3>
         <nav className="flex flex-col justify-start items-start gap-3 sm:gap-4">
-          <a href="#" className="text-sm sm:text-base font-medium leading-6 hover:underline">About Us</a>
-          <a href="#" className="text-sm sm:text-base font-medium leading-6 hover:underline">Service</a>
-          <a href="#" className="text-sm sm:text-base font-medium leading-6 hover:underline">Pricing</a>
-          <a href="#" className="text-sm sm:text-base font-medium leading-6 hover:underline">Blog</a>
+          <a href="#about-us" className="text-sm sm:text-base font-medium leading-6 hover:underline">About Us</a>
+          <a href="#services" className="text-sm sm:text-base font-medium leading-6 hover:underline">Service</a>
+          {/* <a href="#pricing" className="text-sm sm:text-base font-medium leading-6 hover:underline">Pricing</a> */}
+          <a href="#faq" className="text-sm sm:text-base font-medium leading-6 hover:underline">FAQ</a>
+          <a href="#blog" className="text-sm sm:text-base font-medium leading-6 hover:underline">Blog</a>
         </nav>
       </div>
 
@@ -29,19 +30,19 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             {/* Email Icon */}
             <svg className="w-4 h-4 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-            <span className="text-sm sm:text-base font-medium leading-6">hello@website.com</span>
+            <span className="text-sm sm:text-base font-medium leading-6">info@kisanmitra.ai</span>
           </div>
           <div className="flex items-start gap-2">
             {/* Location Icon */}
             <svg className="w-4 h-4 text-white mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path></svg>
             <span className="text-sm sm:text-base font-medium leading-6">
-              Riverside Building, County Hall, London SE1 7PB, United Kingdom
+              107 Jehangir Villa, Wodehouse Road Colaba, Mumbai, MH, 400005
             </span>
           </div>
           <div className="flex items-center gap-2">
             {/* Phone Icon */}
             <svg className="w-4 h-4 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H3a1 1 0 01-1-1V3zM8 3a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H9a1 1 0 01-1-1V3zM14 3a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V3zM2 9a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H3a1 1 0 01-1-1V9zM8 9a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H9a1 1 0 01-1-1V9zM14 9a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V9zM2 15a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H3a1 1 0 01-1-1v-2zM8 15a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H9a1 1 0 01-1-1v-2zM14 15a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1v-2z"></path></svg>
-            <span className="text-sm sm:text-base font-medium leading-6">+02 5421234560</span>
+            <span className="text-sm sm:text-base font-medium leading-6">+91 9892626745</span>
           </div>
         </div>
       </div>

@@ -42,6 +42,7 @@ const FAQItem = ({ question, answer, isOpen, onClick, isVisible, animationDirect
 
   return (
     <div
+    id = 'faq'
       className={`w-full p-8 shadow-xl rounded-xl cursor-pointer
         transition-all duration-700 ease-out
         ${itemBgClass}
@@ -78,7 +79,7 @@ const FAQSection = () => {
     {
       id: 1, // Added ID for consistent key and state tracking
       question: 'Do you provide labour for all crops?',
-      answer: 'Yes! Grapes, bananas, pomegranates, onions, and more.',
+      answer: 'No! We currently provide labour only for grape farmers in Maharashtra.',
     },
     {
       id: 2,

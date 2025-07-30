@@ -76,6 +76,7 @@ const HeroSection = () => {
 
   return (
     <section
+    id ='hero'
       ref={sectionRef} // Attach ref to the section
       className={`relative w-full min-h-screen bg-cover bg-center flex flex-col items-center justify-center text-white p-4 sm:p-6 lg:p-0
         transition-all duration-1000 ease-out
@@ -87,20 +88,20 @@ const HeroSection = () => {
 
       <div className="flex flex-col items-center justify-center gap-4 sm:gap-6 mt-32 text-center px-4 sm:px-0">
         <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold leading-tight max-w-full lg:max-w-5xl">
-          🌱 Building Bharat’s Agri Workforce
+          Building Bharat’s Workforce
         </h1>
         <p className="text-sm sm:text-base font-medium leading-6 max-w-full lg:max-w-2xl">
-          Connecting farmers with skilled labour for pruning, harvesting & beyond — powered by AI.
+          Connecting horticulture farmers with skilled labour.
         </p>
       </div>
 
       {/* Buttons: Now always in one row with reduced spacing on small screens */}
       <div className="flex flex-row justify-center items-center gap-2 sm:gap-4 lg:gap-10 mt-12 sm:mt-16 px-2 sm:px-0 xl:mt-12"> {/* Changed flex-col sm:flex-row to flex-row and reduced gap/padding */}
         <button className="px-4 py-3 sm:px-6 sm:py-4 lg:px-10 lg:py-8 bg-brandGreen rounded-full text-white text-xs sm:text-base lg:text-xl font-semibold leading-6 text-center shadow-md hover:bg-teal-700 transition-colors duration-300 flex-shrink-0"> {/* Reduced padding and font size, added flex-shrink-0 */}
-          📲 Get Labour Now
+          Get Labour Now
         </button>
         <button className="px-4 py-3 sm:px-6 sm:py-4 lg:px-10 lg:py-8 bg-white rounded-full text-brandGreen text-xs sm:text-base lg:text-xl font-semibold leading-6 text-center shadow-md hover:bg-gray-100 transition-colors duration-300 flex-shrink-0"> {/* Reduced padding and font size, added flex-shrink-0 */}
-          🤝 Partner With Us
+          Partner With Us
         </button>
       </div>
 
@@ -108,16 +109,16 @@ const HeroSection = () => {
       <div className="relative w-full px-2 py-4 bg-white rounded-t-xl sm:rounded-xl shadow-lg flex flex-row justify-around items-center gap-1 mb-0 sm:mb-16 max-w-full lg:max-w-4xl mt-12 sm:mt-24 lg:mt-16">
         <div className="flex flex-col items-center justify-center gap-0.5 flex-1 p-1">
           <div className="text-xl sm:text-3xl lg:text-5xl font-semibold leading-tight text-gray-900 text-center">
-            <AnimatedCounter endValue={15} />
+            <AnimatedCounter endValue={5} />
             <span className="text-brandGreen">+</span>
           </div>
           <div className="text-[0.6rem] sm:text-xs lg:text-base font-medium leading-3 sm:leading-4 lg:leading-6 text-gray-600 text-center">
-            Districts Covered
+            Tehsils Covered
           </div>
         </div>
         <div className="flex flex-col items-center justify-center gap-0.5 flex-1 p-1">
           <div className="text-xl sm:text-3xl lg:text-5xl font-semibold leading-tight text-gray-900 text-center">
-            <AnimatedCounter endValue={10} />K<span className="text-brandGreen">+</span>
+            <AnimatedCounter endValue={2} />K<span className="text-brandGreen">+</span>
           </div>
           <div className="text-[0.6rem] sm:text-xs lg:text-base font-medium leading-3 sm:leading-4 lg:leading-6 text-gray-600 text-center">
             Labourers Onboarded
@@ -133,11 +134,11 @@ const HeroSection = () => {
         </div>
         <div className="flex flex-col items-center justify-center gap-0.5 flex-1 p-1">
           <div className="text-xl sm:text-3xl lg:text-5xl font-semibold leading-tight text-gray-900 text-center">
-            <AnimatedCounter endValue={87} />
-            <span className="text-brandGreen">%</span>
+            <AnimatedCounter endValue={14} />
+            <span className="text-brandGreen">K</span>
           </div>
           <div className="text-[0.6rem] sm:text-xs lg:text-base font-medium leading-3 sm:leading-4 lg:leading-6 text-gray-600 text-center">
-            Faster Labour Booking
+            Acres
           </div>
         </div>
       </div>

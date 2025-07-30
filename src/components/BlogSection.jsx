@@ -185,9 +185,9 @@ const BlogSection = () => {
 
 
   return (
-    <section
+    <section id = "blog"
       ref={sectionRef} // Attach ref for overall section visibility
-      className={`bg-white py-16 px-4 sm:px-6 lg:px-24`}
+      className={` bg-white py-16 px-4 sm:px-6 lg:px-24`}
     >
       {/* Headline and Subheading */}
       <div className={`max-w-3xl mx-auto flex flex-col justify-center items-center gap-4 sm:gap-6 mb-12 sm:mb-16 text-center

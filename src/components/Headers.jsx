@@ -15,8 +15,8 @@ const Header = () => {
 
       {/* Desktop Navigation (hidden on small screens) */}
       <nav className="hidden md:flex items-center space-x-8 lg:space-x-12">
-        <a href="#" className="text-white text-base font-semibold leading-6 hover:underline">Home</a>
-        <a href="#" className="text-white text-base font-semibold leading-6 hover:underline">About Us</a>
+        <a href="#hero" className="text-white text-base font-semibold leading-6 hover:underline">Home</a>
+        <a href="#about-us" className="text-white text-base font-semibold leading-6 hover:underline">About Us</a>
         <div className="flex items-center space-x-2 cursor-pointer group">
           <span className="text-white text-base font-semibold leading-6 group-hover:underline">Pages</span>
           {/* Dropdown Icon */}

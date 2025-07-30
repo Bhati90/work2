@@ -113,33 +113,33 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      quote: "Earlier we used to waste weeks finding labour during pruning season. Now we just send a WhatsApp message and workers arrive.",
-      name: "Vilas",
-      title: "Banana Farmer, Nanded",
+      quote: "Earlier, we wasted weeks chasing labour for pruning. Even after paying an advance, there was no guarantee they’d show up.",
+      name: "Ganesh",
+      title: "Crimson, Nashik",
       avatarUrl: "https://placehold.co/80x98/FFD700/000000?text=Vilas", // Placeholder with unique color
       rating: 5,
     },
     {
       id: 2,
-      quote: "I was earning irregular wages before. Now, I get work every week and payment on time.",
+      quote: "Before, I had to wait at the chowk for labourers. Now, I get steady labour at the click of a button.",
       name: "Shankar",
-      title: "Pruner from Beed",
+      title: "Sharad Seedless, Ahilyanagar",
       avatarUrl: "https://placehold.co/80x98/87CEEB/000000?text=Shankar", // Placeholder with unique color
       rating: 4,
     },
     {
       id: 3,
-      quote: "This service has completely changed how we manage our farms.",
+      quote: "As a small farmer I worried about reliability. Now I get trained, supervised labour that finishes the job on time",
       name: "Arvind",
-      title: "Grape Grower, Nashik",
+      title: "Arra 15, Nashik",
       avatarUrl: "https://placehold.co/80x98/FFB6C1/000000?text=Arvind", // Placeholder with unique color
       rating: 5,
     },
     {
       id: 4,
-      quote: "This service is a game-changer for small farmers like me. Highly recommended!",
+      quote: "This service is a game-changer for specialist tasks like pruning, dipping and thinning.",
       name: "Priya",
-      title: "Vegetable Farmer, Pune",
+      title: "Thomson Seedless, Sangli",
       avatarUrl: "https://placehold.co/80x98/98FB98/000000?text=Priya", // Placeholder with unique color
       rating: 4,
     },
@@ -186,15 +186,15 @@ const TestimonialsSection = () => {
         ${headlineVisible ? visibleStateClassesY : hiddenStateClassesY}
       `}>
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight text-gray-900">
-          See What They Are Saying <span className="text-brandGreen">About EcoSculpt</span>
+          Hear it Through the <span className="text-brandGreen">Grape Vine</span>
         </h2>
         <p className="text-base font-medium leading-6 text-gray-600 max-w-full lg:max-w-none">
-          Hear directly from farmers and laborers about the impact of our services.
+          Real voices on how we make labour simple, reliable, and stress‑free.
         </p>
       </div>
 
       {/* Testimonial Cards Grid */}
-      <div className="max-w-7xl mx-auto ml-4 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-20">
+      <div className="max-w-7xl mx-auto ml-4 md:ml-0 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-20">
         {testimonials.map((testimonial, index) => (
           <TestimonialCard
             key={testimonial.id}

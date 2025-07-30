@@ -95,33 +95,33 @@ const ServicesSection = () => {
     {
       id: 1,
       title: "📋 Labour Booking",
-      description: "Skilled labour for pruning, harvesting & spraying.",
+      description: "RReliable, skilled labour for pruning, harvesting, and spraying — whenever you need them.",
       isFeatured: true, // This card will be featured by default
     },
     {
       id: 2,
       title: "👨‍🏫 Training & Upskilling",
-      description: "Certified programs to improve worker skills.",
+      description: "Crop-specific programs that turn labourers into craftsmen.",
     },
     {
       id: 3,
       title: "📍 On-Ground Support",
-      description: "Mukadams and field teams ensure smooth operations.",
+      description: "Local mukadams and field teams keep tasks on track, quality high, and issues solved fast.",
     },
     {
       id: 4,
       title: "🚚 Transport & Logistics",
-      description: "We arrange transport for workers to your farm.",
+      description: "Door-to-farm transport arranged end-to-end, so crews arrive fresh and on schedule.",
     },
     {
       id: 5,
       title: "📲 Digital Records",
-      description: "All bookings, payments & worker details stored online.",
+      description: "Bookings, wages, and worker history — securely stored and searchable in one dashboard.",
     },
     {
       id: 6,
-      title: "📞 WhatsApp Support",
-      description: "1-tap booking & real-time updates.",
+      title: "📞 Indic Support",
+      description: "Book, reschedule, or get real-time updates in your local dialect.",
     },
   ];
 
@@ -136,6 +136,7 @@ const ServicesSection = () => {
 
   return (
     <section
+    id = 'services'
       ref={sectionRef} // Attach ref for overall section visibility
       className={`bg-white py-16 px-4 sm:px-6 lg:px-24`}
     >
@@ -148,7 +149,7 @@ const ServicesSection = () => {
           Our labour solutions and <span className="text-brandGreen">services</span>
         </h2>
         <p className="text-base font-medium leading-6 text-gray-600 max-w-full lg:max-w-none">
-          From sourcing skilled workers to ensuring smooth operations on your farm, we've got you covered.
+          From finding skilled hands to managing smooth operations — we take care of it all.
         </p>
       </div>
 

@@ -82,6 +82,7 @@ const AboutSection = () => {
     <section
       ref={sectionRef} // Attach ref for overall section visibility
       className={`bg-white py-16 px-4 sm:px-6 lg:px-24`}
+      id = 'about-us'
     >
       {/* Headline and Subheading */}
       <div className={`max-w-7xl mx-auto flex flex-col justify-center items-start gap-4 sm:gap-6 text-center lg:text-left mb-12 sm:mb-16
@@ -89,10 +90,10 @@ const AboutSection = () => {
         ${headlineVisible ? visibleStateClasses : hiddenStateClasses}
       `}>
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight text-gray-900">
-          Caring For Your <span className="text-brandGreen">Fields</span>, Our Mission
+          Caring For Your <span className="text-brandGreen">Fields</span>
         </h2>
         <p className="text-base font-medium leading-6 text-gray-600 max-w-full lg:max-w-none">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut sapien et ex volutpat tincidunt eget at felis.
+          We’re building the future of rural labour — ensuring every farm has the hands it needs, and every worker has the dignity they deserve.
         </p>
       </div>
 
@@ -113,7 +114,7 @@ const AboutSection = () => {
                 Our <span className="text-brandGreen">Mission</span>
               </h3>
               <p className="text-sm sm:text-base font-medium leading-6 text-gray-600">
-                We’re on a mission to solve India’s farm labour crisis — bringing dignity, structure, and reliability to agri work while ensuring farmers never scramble for labour again.
+                We’re here to end India’s farm labour crisis — bringing dignity, structure, and reliability to agricultural work, so farmers never have to scramble for help again.
               </p>
             </div>
           </div>
@@ -131,7 +132,7 @@ const AboutSection = () => {
                 Our <span className="text-brandGreen">Vision</span>
               </h3>
               <p className="text-sm sm:text-base font-medium leading-6 text-gray-600">
-                A future where every farmer in Bharat can access the skilled workforce they need with just a WhatsApp message — and every labourer gets fair pay, on time.
+                We see a future where every farmer in Bharat can find skilled workers with a single WhatsApp message — and where every labourer is paid fairly and on time.
               </p>
             </div>
           </div>
