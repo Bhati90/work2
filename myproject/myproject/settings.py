@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','back.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','https://work2-vn12.onrender.com','.onrender.com','deft-cupcake-e0ba51.netlify.app']
 
 # Application definition
 
@@ -138,5 +138,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
-    "https://deft-cupcake-e0ba51.netlify.app/", # This must match your React app's URL
+    "https://deft-cupcake-e0ba51.netlify.app/",
+     "https://work2-vn12.onrender.com" # This must match your React app's URL
 ]
