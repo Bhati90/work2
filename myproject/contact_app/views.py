@@ -5,6 +5,11 @@ from django.views.decorators.csrf import csrf_exempt # Import csrf_exempt
 # from corsheaders.decorators import cors_exempt       # Import cors_exempt
 import json
 from .models import ContactMessage
+from django.shortcuts import render # Make sure render is imported
+
+def home_page(request):
+    return render(request, 'contact_app/home.html', {'message': 'Welcome to my Contact App!'})
+
 
 # Apply decorators directly to the function for function-based views
 @csrf_exempt # This decorator disables CSRF protection for this view

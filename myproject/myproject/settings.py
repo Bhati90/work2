@@ -138,6 +138,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
-    "https://deft-cupcake-e0ba51.netlify.app/",
+    "https://deft-cupcake-e0ba51.netlify.app",
      "https://work2-vn12.onrender.com" # This must match your React app's URL
 ]

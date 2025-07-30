@@ -79,7 +79,7 @@ const ContactSection = () => {
     setSubmitError('');
 
    // In your React ContactSection component
-const backendApiUrl = 'http://localhost:8000/api/contact/submit/';
+const backendApiUrl = 'https://work2-vn12.onrender.com/api/contact/submit/';
     try {
       const response = await fetch(backendApiUrl, {
         method: 'POST',
