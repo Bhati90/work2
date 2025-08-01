@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 
 // Reusable custom hook for scroll-triggered visibility (copied from previous components)
@@ -82,6 +83,7 @@ const BlogPostCard = ({ imageUrl, category, title, views, comments, readTime, on
           src={imageUrl}
           alt={title}
           className="w-full h-full object-cover"
+          loading="lazy"
         />
       </div>
       <div className="p-4 sm:p-6 flex flex-col gap-3 sm:gap-4 flex-grow"> {/* Responsive padding and added flex-grow */}

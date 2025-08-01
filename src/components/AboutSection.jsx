@@ -147,6 +147,7 @@ const AboutSection = () => {
             src="IMG-20250730-WA0005.jpg" // Replace with your actual image
             alt="Farm fields"
             className="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
       </div>

@@ -146,6 +146,7 @@ const backendApiUrl = 'https://work2-vn12.onrender.com/api/contact/submit/';
           <img
             src="IMG-20250730-WA0011.jpg"
             alt="Contact Us"
+            loading="lazy"
             className="w-full h-full object-cover"
             onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/897x560/E0F2F1/000000?text=Image+Not+Found"; }}
           />

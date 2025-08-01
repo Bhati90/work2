@@ -76,13 +76,17 @@ const HeroSection = () => {
 
   return (
     <section
-    id ='hero'
-      ref={sectionRef} // Attach ref to the section
+      id='hero'
+      ref={sectionRef}
       className={`relative w-full min-h-screen bg-cover bg-center flex flex-col items-center justify-center text-white p-4 sm:p-6 lg:p-0
         transition-all duration-1000 ease-out
         ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
       `}
-      style={{ backgroundImage: 'linear-gradient(0deg, rgba(58, 58, 58, 0.42) 0%, rgba(58, 58, 58, 0.42) 100%), url(IMG-20250730-WA0010.jpg)' }}
+      style={{
+        backgroundImage: 'linear-gradient(0deg, rgba(58, 58, 58, 0.42) 0%, rgba(58, 58, 58, 0.42) 100%), url(IMG-20250730-WA0010.jpg)',
+        // This is the new part
+        backgroundPosition: 'top center' // Keep the top of the image visible
+      }}
     >
       <Headers /> {/* Render the Header component */}
 
@@ -101,7 +105,7 @@ const HeroSection = () => {
           Get Labour Now
         </button>
         <button className="px-4 py-3 sm:px-6 sm:py-4 lg:px-10 lg:py-8 bg-white rounded-full text-brandGreen text-xs sm:text-base lg:text-xl font-semibold leading-6 text-center shadow-md hover:bg-gray-100 transition-colors duration-300 flex-shrink-0"> {/* Reduced padding and font size, added flex-shrink-0 */}
-          Partner With Us
+        <a href = "http://localhost:8080/" >Partner With Us</a> 
         </button>
       </div>
 
